@@ -8,6 +8,7 @@
     "dev:frontend": "vite --open",
     "dev:backend": "convex dev",
     "build": "vite build",
+    "vercel-build": "convex deploy --cmd \"npm run build\" --cmd-url-env-var-name VITE_CONVEX_URL",
     "lint": "tsc -p convex -noEmit --pretty false && tsc -p . -noEmit --pretty false && convex dev --once && vite build"
   },
   "dependencies": {
@@ -16,6 +17,7 @@
     "@types/marked": "^5.0.2",
     "clsx": "^2.1.1",
     "convex": "^1.24.2",
+    "lucide-react": "^1.63.0",
     "marked": "^16.1.2",
     "pdf-parse": "^1.1.1",
     "react": "^19.0.0",
