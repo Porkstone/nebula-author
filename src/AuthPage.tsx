@@ -1,5 +1,6 @@
 import { ArrowUpRight, FilePenLine } from "lucide-react";
 import { SignInForm } from "./SignInForm";
+import { REPORT_PATH } from "./reports/southEnglandPestControl";
 
 export function AuthPage() {
   return (
@@ -54,6 +55,7 @@ export function AuthPage() {
 
       <footer className="auth-footer">
         <p>© {new Date().getFullYear()} Pestology Ltd</p>
+        <a href={REPORT_PATH}>Pest control market report</a>
         <a href="https://pestologyltd.co.uk/privacy-policy/">Privacy policy</a>
       </footer>
     </div>

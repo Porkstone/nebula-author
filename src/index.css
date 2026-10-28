@@ -359,6 +359,9 @@ body {
 }
 .auth-footer {
   min-height: 68px;
+  flex-wrap: wrap;
+  gap: 12px 20px;
+  padding-block: 20px;
   color: #686868;
   font-size: 11px;
 }
